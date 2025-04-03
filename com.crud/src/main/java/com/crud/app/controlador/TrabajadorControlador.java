@@ -1,5 +1,6 @@
 package com.crud.app.controlador;
 
+import com.crud.app.modelo.Trabajador;
 import com.crud.app.servicio.TrabajadorServicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,9 +14,18 @@ public class TrabajadorControlador {
     private TrabajadorServicio servicio;
 
     @GetMapping({"/trabajadores","/"})
-    public String listarEstudiantes(Model modelo){
+    public String listarTrabajadores(Model modelo){
         modelo.addAttribute("trabajadores", servicio.ListarTrabajadores());
         return "trabajadores";
+    }
+
+
+    @GetMapping("/trabajadores/nuevo")
+    public String CrearTrabajadorFormulario(Model modelo){
+        Trabajador trabajador = new Trabajador();
+        modelo.addAttribute("trabajador",trabajador);
+        return "crear_trabajador";
+
     }
 
 
