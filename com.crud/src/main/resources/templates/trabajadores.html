@@ -26,12 +26,20 @@
                 <h1>Lista de trabajadores</h1>
 
             </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-3">
+                    <a th:href="@{/trabajadores/nuevo}" class="btn btn-primary btn-sm mb3">Agregar Trabajador</a>
+                </div>
+            </div>
+            <br>
             <table class="table table-striped table-bordered">
                 <thead class="table-dark ">
                     <tr>
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Email</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,7 +47,10 @@
                         <td th:text="${trabajador.nombre}">Nombre</td>
                         <td th:text="${trabajador.apellido}">Apellido</td>
                         <td th:text="${trabajador.email}">Email</td>
-
+                        <td>
+                            <a th:href="@{/trabajadores/editar/{id}(id=${trabajador.id})}" class="btn btn-info">Editar</a>
+                            <a th:href="@{/trabajadores/{id}(id=${trabajador.id})}" class="btn btn-danger">Eliminar</a>
+                        </td>
                     </tr>
                 </tbody>
             </table>

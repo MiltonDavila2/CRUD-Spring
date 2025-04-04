@@ -8,4 +8,10 @@ public interface TrabajadorServicio {
     public List<Trabajador> ListarTrabajadores();
 
     public Trabajador GuardarTrabajador(Trabajador trabajador);
+
+    public Trabajador obtenerTrabajadorID(Long id);
+
+    public Trabajador actualizarTrabajador(Trabajador trabajador);
+
+    public void eliminarTrabajador(Long id);
 }

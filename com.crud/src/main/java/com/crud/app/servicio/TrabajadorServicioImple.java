@@ -22,4 +22,19 @@ public class TrabajadorServicioImple implements TrabajadorServicio{
     public Trabajador GuardarTrabajador(Trabajador trabajador) {
         return repositorio.save(trabajador);
     }
+
+    @Override
+    public Trabajador obtenerTrabajadorID(Long id) {
+        return repositorio.findById(id).get();
+    }
+
+    @Override
+    public Trabajador actualizarTrabajador(Trabajador trabajador) {
+        return repositorio.save(trabajador);
+    }
+
+    @Override
+    public void eliminarTrabajador(Long id) {
+        repositorio.deleteById(id);
+    }
 }
