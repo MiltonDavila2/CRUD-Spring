@@ -17,4 +17,9 @@ public class TrabajadorServicioImple implements TrabajadorServicio{
     public List<Trabajador> ListarTrabajadores() {
         return repositorio.findAll();
     }
+
+    @Override
+    public Trabajador GuardarTrabajador(Trabajador trabajador) {
+        return repositorio.save(trabajador);
+    }
 }

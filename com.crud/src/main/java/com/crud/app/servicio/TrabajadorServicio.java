@@ -7,4 +7,5 @@ import java.util.List;
 public interface TrabajadorServicio {
     public List<Trabajador> ListarTrabajadores();
 
+    public Trabajador GuardarTrabajador(Trabajador trabajador);
 }
