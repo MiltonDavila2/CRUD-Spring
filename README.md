@@ -2,7 +2,7 @@
 Bienvenidos, este es mi sistema de de CRUD hecho en Spring, utilizando las librerias de JPA, Thymeleaf, MySQL. En el siguiente documento veremos como funciona y como se compone este proyecto.
 
 # Descripcion
-Dentro del proyecto se utilizo una forma sencilla de utilizar el MVC, en este caso cuando iniciamos diciendo que utiliza Spring y varias librerias, en primer lugar la libreria de Thymeleaf, para generar las vistas, JPA y Spring web tools. Funciona correctamente su READ, al iniciar ira al a ver los usuarios, tambien funciona su create y el editar y el eliminar.
+Dentro del proyecto se utilizo una forma sencilla de utilizar el MVC, en este caso cuando iniciamos diciendo que utiliza Spring y varias librerias, en primer lugar la libreria de Thymeleaf, para generar las vistas, JPA y Spring web tools. Funciona correctamente su READ, al iniciar ira al a ver los usuarios, tambien funciona su create y el editar y el eliminar. Realmente no fue complicada, espero con esto avanzar en mi crecimiento a la hora de crear paginas web.
 
 # Como usar:
 1. Tenemos que tener instalado el MySQL, JDK 21 de java y un IDE de java.
@@ -15,6 +15,9 @@ Dentro del proyecto se utilizo una forma sencilla de utilizar el MVC, en este ca
     spring.datasource.username=root
     spring.datasource.password=holamundo
 8. Vamos a java/CrudApplication y damos a correr
-9. Dependera 
+9. Si estamos corriendo algo mas en el puerto 8080, entonces tendremos que cambiarlo en el resources/application.properties para otro puerto.
+10. Vamos a cualquier navegador y escribimos http://localhost:8080
+11. Listo, tendria que salir algo asi
 
+![Sistema funcional](image.png)
 
