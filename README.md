@@ -7,8 +7,8 @@ Dentro del proyecto se utilizo una forma sencilla de utilizar el MVC, en este ca
 # Como instalar:
 1. Tenemos que tener instalado el MySQL, JDK 21 de java y un IDE de java.
 2. Descargamos el codigo dentro del github
-3. Tenemos que tener ir a nuestro IDE y abrir dicho codigo.
-4. Tenemos que crear en nuestra base de datos MySQL, una nueva base de datos.
+3. Tenemos que ir a nuestro IDE y abrir dicho codigo.
+4. Tenemos que crear en nuestra base de datos MySQL, una nueva base de datos completamente nueva.
 5. Vamos a nuestro codigo y vamos a la carpeta resources/application.properties
 6. Cambiamos en spring.datasource.url=jdbc:mysql://localhost:(Nuestro puerto)/(Nuestro nombre de base de datos que hemos creado)
 7. Si tenemos para ingresar un usuario y una clave propia cambiamos entonces 
