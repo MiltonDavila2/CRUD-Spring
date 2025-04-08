@@ -4,7 +4,7 @@ Bienvenidos, este es mi sistema de de CRUD hecho en Spring, utilizando las libre
 # Descripcion
 Dentro del proyecto se utilizo una forma sencilla de utilizar el MVC, en este caso cuando iniciamos diciendo que utiliza Spring y varias librerias, en primer lugar la libreria de Thymeleaf, para generar las vistas, JPA y Spring web tools. Funciona correctamente su READ, al iniciar ira al a ver los usuarios, tambien funciona su create y el editar y el eliminar. Realmente no fue complicada, espero con esto avanzar en mi crecimiento a la hora de crear paginas web.
 
-# Como usar:
+# Como instalar:
 1. Tenemos que tener instalado el MySQL, JDK 21 de java y un IDE de java.
 2. Descargamos el codigo dentro del github
 3. Tenemos que tener ir a nuestro IDE y abrir dicho codigo.
@@ -20,4 +20,10 @@ Dentro del proyecto se utilizo una forma sencilla de utilizar el MVC, en este ca
 11. Listo, tendria que salir algo asi
 
 ![Sistema funcional](image.png)
+
+# Como funciona:
+1. Al ingresar tendremos el READ de la base datos.
+2. Podremos ingresar un trabajador.
+3. Al terminar el ingreso podremos editar o eliminar al empleado
+4. Eso seria todo!
 
